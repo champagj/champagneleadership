@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Champagne Leadership & Consulting | Board Governance & Executive Leadership</title>
-    <meta name="description" content="Strategic advisory services for boards and associations. Governance, leadership development, and AI implementation expertise.">
+    <meta name="description" content="Strategic advisory for boards, associations, and executive teams. Sixteen years of CEO experience brought to the table for governance, leadership, and AI implementation.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,6 @@
             --cream: #FBF6EF;
             --light-red: #F4CCCC;
             
-            /* Font variables */
             --font-heading: 'Playfair Display', Georgia, serif;
             --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
@@ -38,7 +37,6 @@
             overflow-x: hidden;
         }
         
-        /* Elegant animated background */
         .background-pattern {
             position: fixed;
             top: 0;
@@ -57,9 +55,9 @@
             50% { transform: translate(20px, -20px); }
         }
         
-        /* Header */
+        /* Header with logo */
         header {
-            padding: 2rem 5%;
+            padding: 1.5rem 5%;
             background: rgba(251, 246, 239, 0.95);
             backdrop-filter: blur(10px);
             position: sticky;
@@ -67,6 +65,10 @@
             z-index: 100;
             border-bottom: 1px solid rgba(196, 30, 58, 0.2);
             animation: slideDown 0.6s ease-out;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
         }
         
         @keyframes slideDown {
@@ -74,48 +76,25 @@
             to { transform: translateY(0); opacity: 1; }
         }
         
-        /* Logo Container - Kept but hidden */
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .logo-icon {
-            height: 45px;
+        .header-logo {
+            height: 60px;
             width: auto;
-            flex-shrink: 0;
+            display: block;
             transition: transform 0.3s ease;
-            /* Hidden for now */
-            display: none;
         }
         
-        .logo-icon:hover {
-            transform: scale(1.05);
+        .header-logo:hover {
+            transform: scale(1.02);
         }
         
-        .logo-text {
-            font-family: var(--font-heading);
-            font-size: 1.7rem;
-            font-weight: 400;
-            letter-spacing: 2px;
-            color: var(--dark-red-brown);
-            line-height: 1.2;
-        }
-        
-        .logo-text strong {
-            font-weight: 700;
-            color: var(--cardinal-red);
-        }
-        
-        /* Hero Section - Updated with photo */
+        /* Hero Section */
         .hero {
-            min-height: 85vh;
+            min-height: 80vh;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
-            padding: 4rem 5%;
+            padding: 3rem 5% 4rem;
             position: relative;
         }
         
@@ -128,7 +107,6 @@
             to { transform: translateY(0); opacity: 1; }
         }
         
-        /* Presentation photo section */
         .hero-image {
             position: relative;
             animation: fadeInUp 0.8s ease-out 0.4s both;
@@ -160,7 +138,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: top;
+            object-position: center;
             display: block;
         }
         
@@ -186,7 +164,7 @@
             font-size: 1.3rem;
             font-weight: 300;
             color: var(--deep-burgundy);
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
             font-style: italic;
         }
         
@@ -195,7 +173,53 @@
             font-size: 1.05rem;
             line-height: 1.8;
             color: var(--dark-red-brown);
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        /* Hero CTAs */
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+        
+        .btn {
+            font-family: var(--font-body);
+            display: inline-block;
+            padding: 0.95rem 1.8rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            border: 2px solid var(--cardinal-red);
+            white-space: nowrap;
+        }
+        
+        .btn-primary {
+            background: var(--cardinal-red);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--coral-red);
+            border-color: var(--coral-red);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(196, 30, 58, 0.35);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--cardinal-red);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--cardinal-red);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(196, 30, 58, 0.25);
         }
         
         /* Expertise Cards */
@@ -368,34 +392,43 @@
             animation: fadeInUp 0.8s ease-out 0.2s both;
         }
         
-        .cta-button {
-            font-family: var(--font-body);
-            display: inline-block;
-            padding: 1.2rem 2.5rem;
-            background: var(--cardinal-red);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            border-radius: 2px;
-            transition: all 0.3s ease;
-            border: 2px solid var(--cardinal-red);
-            letter-spacing: 1px;
-        }
-        
-        .cta-button:hover {
-            background: var(--coral-red);
-            border-color: var(--coral-red);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.4);
-        }
-        
         .cta-buttons {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 1rem;
             flex-wrap: wrap;
             animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+        
+        .btn-on-dark-primary {
+            background: var(--cardinal-red);
+            color: white;
+            border: 2px solid var(--cardinal-red);
+            padding: 1.1rem 2.2rem;
+            font-size: 1rem;
+        }
+        
+        .btn-on-dark-primary:hover {
+            background: var(--coral-red);
+            border-color: var(--coral-red);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.5);
+        }
+        
+        .btn-on-dark-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            padding: 1.1rem 2.2rem;
+            font-size: 1rem;
+        }
+        
+        .btn-on-dark-secondary:hover {
+            background: white;
+            color: var(--dark-red-brown);
+            border-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
         }
         
         /* Simplified Footer */
@@ -430,6 +463,16 @@
             .presentation-photo {
                 height: 500px;
             }
+            
+            header {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+            
+            .header-logo {
+                height: 50px;
+            }
         }
         
         @media (max-width: 768px) {
@@ -457,32 +500,27 @@
                 height: 400px;
             }
             
-            /* Mobile logo adjustments */
-            .logo-icon {
-                height: 35px;
-            }
-            
-            .logo-text {
-                font-size: 1.3rem;
+            .header-logo {
+                height: 45px;
             }
             
             header {
-                padding: 1.5rem 5%;
+                padding: 1rem 5%;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .hero-ctas .btn {
+                text-align: center;
             }
         }
         
         @media (max-width: 480px) {
-            .logo-container {
-                gap: 0.7rem;
-            }
-            
-            .logo-icon {
-                height: 30px;
-            }
-            
-            .logo-text {
-                font-size: 1.1rem;
-                letter-spacing: 1px;
+            .header-logo {
+                height: 40px;
             }
             
             .presentation-photo {
@@ -503,13 +541,9 @@
     <div class="background-pattern"></div>
     
     <header>
-        <div class="logo-container">
-            <!-- Logo hidden but code kept for future use -->
-            <!-- <img src="CL_Ampoule_web.png" alt="Champagne Leadership lightbulb icon" class="logo-icon"> -->
-            <div class="logo-text">
-                <strong>CHAMPAGNE</strong> Leadership & Consulting
-            </div>
-        </div>
+        <a href="/" aria-label="Champagne Leadership & Consulting home">
+            <img src="champagne-leadership-horizontal-black.svg" alt="Champagne Leadership & Consulting" class="header-logo">
+        </a>
     </header>
     
     <main>
@@ -519,16 +553,27 @@
                     <strong>Celebrating</strong>
                     Leadership Excellence
                 </h1>
-                <p class="hero-tagline">Strategic advisory for boards and associations</p>
+                <p class="hero-tagline">Strategic advisory for boards, associations, and the executives who lead them</p>
                 <p class="hero-description">
-                    Transform your organization through expert governance, visionary leadership, and strategic technology implementation. With deep experience as a former CEO of non-profit organizations, I bring practical wisdom and forward-thinking solutions to boards and executive teams.
+                    Boards and association leaders face decisions every day that don't come with a clear playbook — succession, strategy, technology shifts, member expectations that keep evolving. After sixteen years sitting in the CEO chair myself, I bring a peer's perspective to those conversations: practical, candid, and grounded in what actually works.
                 </p>
+                
+                <div class="hero-ctas">
+                    <a href="https://linkedin.com/in/jfchampagne" class="btn btn-primary" target="_blank" rel="noopener">
+                        Connect on LinkedIn
+                    </a>
+                    <a href="https://calendly.com/jf-champagneleadership/30min" class="btn btn-secondary" target="_blank" rel="noopener">
+                        Book a Call
+                    </a>
+                    <a href="mailto:jf@champagneleadership.ca" class="btn btn-secondary">
+                        Send an Email
+                    </a>
+                </div>
             </div>
             
-            <!-- Presentation photo -->
             <div class="hero-image">
                 <div class="presentation-photo">
-                    <img src="presentation-photo.jpg" alt="JF Champagne presenting at an industry event" loading="lazy">
+                    <img src="250906-Website_Carquest-0263.jpg" alt="JF Champagne presenting at an industry event" loading="lazy">
                 </div>
             </div>
         </section>
@@ -566,16 +611,16 @@
             <div class="about-content">
                 <h2>Experience That Matters</h2>
                 <p>
-                    With a proven track record as a former CEO of non-profit organizations, I bring firsthand understanding of the unique challenges and opportunities facing boards, associations, and mission-driven organizations.
+                    I've spent most of my career as a non-profit CEO — leading national trade associations through growth, restructuring, and the kind of board-CEO conversations that don't make it into the annual report. That seat taught me what works, what doesn't, and how to tell the difference quickly.
                 </p>
                 <p>
-                    My approach combines strategic governance expertise with practical implementation experience, helping organizations navigate transitions, embrace innovation, and achieve sustainable growth.
+                    Now I bring that perspective to other organizations. Sometimes that means helping a board sharpen its governance and find its rhythm. Sometimes it means coaching a new executive through their first year. Sometimes it means cutting through the noise on AI to figure out what's actually useful for an association. The common thread is honest counsel from someone who's been on your side of the table.
                 </p>
                 
                 <div class="credentials">
                     <div class="credential">
                         <div class="credential-title">Name</div>
-                        <div class="credential-value">Jean-Francois (JF) Champagne, CAE</div>
+                        <div class="credential-value">Jean-François (JF) Champagne, CAE, AAiP</div>
                     </div>
                     <div class="credential">
                         <div class="credential-title">Focus Areas</div>
@@ -590,21 +635,23 @@
         </section>
         
         <section class="cta">
-            <h2>Let's Elevate Your Leadership</h2>
-            <p>Ready to transform your board or organization? Let's discuss how we can work together to achieve your strategic goals.</p>
+            <h2>Let's Have a Conversation</h2>
+            <p>Whether you're scoping a specific engagement or just want to talk through what you're facing, the first conversation is the easy part.</p>
             
             <div class="cta-buttons">
-                <a href="https://linkedin.com/in/jfchampagne" class="cta-button" target="_blank" rel="noopener">
+                <a href="https://linkedin.com/in/jfchampagne" class="btn btn-on-dark-primary" target="_blank" rel="noopener">
                     Connect on LinkedIn
                 </a>
-                <a href="mailto:jf@champagneleadership.ca" class="cta-button">
+                <a href="https://calendly.com/jf-champagneleadership/30min" class="btn btn-on-dark-secondary" target="_blank" rel="noopener">
+                    Book a Call
+                </a>
+                <a href="mailto:jf@champagneleadership.ca" class="btn btn-on-dark-secondary">
                     Send an Email
                 </a>
             </div>
         </section>
     </main>
     
-    <!-- Simplified footer -->
     <footer>
         <div class="footer-simple">
             <p style="margin-bottom: 0.5rem;"><strong style="color: white;">Champagne Leadership & Consulting</strong></p>
