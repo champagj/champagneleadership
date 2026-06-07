@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180">
+  <!-- CHAMPAGNE wordmark -->
+  <text x="400" y="85" text-anchor="middle" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 72px; letter-spacing: 4px; fill: #C41E3A;">CHAMPAGNE</text>
+  
+  <!-- Decorative divider line with center dot (slightly shorter for French) -->
+  <line x1="220" y1="110" x2="385" y2="110" stroke="#C41E3A" stroke-width="1.5"/>
+  <circle cx="400" cy="110" r="3" fill="#C41E3A"/>
+  <line x1="415" y1="110" x2="580" y2="110" stroke="#C41E3A" stroke-width="1.5"/>
+  
+  <!-- Leadership & Conseil tagline -->
+  <text x="400" y="145" text-anchor="middle" style="font-family: 'Inter', -apple-system, sans-serif; font-weight: 300; font-size: 24px; letter-spacing: 8px; fill: #000000;">LEADERSHIP &amp; CONSEIL</text>
+</svg>
