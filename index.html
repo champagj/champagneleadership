@@ -87,6 +87,42 @@
             transform: scale(1.02);
         }
         
+        /* Language Toggle */
+        .language-toggle {
+            display: flex;
+            gap: 0.4rem;
+            align-items: center;
+            font-family: var(--font-body);
+        }
+        
+        .lang-link {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 0.5rem 0.9rem;
+            text-decoration: none;
+            color: var(--dark-red-brown);
+            border: 2px solid transparent;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        
+        .lang-link:hover {
+            border-color: var(--cardinal-red);
+            color: var(--cardinal-red);
+        }
+        
+        .lang-link.active {
+            background: var(--cardinal-red);
+            color: white;
+            border-color: var(--cardinal-red);
+        }
+        
+        .lang-separator {
+            color: var(--deep-burgundy);
+            opacity: 0.3;
+        }
+        
         /* Hero Section */
         .hero {
             min-height: 80vh;
@@ -138,7 +174,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center-top;
+            object-position: center top;
             display: block;
         }
         
@@ -544,6 +580,11 @@
         <a href="/" aria-label="Champagne Leadership & Consulting home">
             <img src="champagne-leadership-horizontal-black.svg" alt="Champagne Leadership & Consulting" class="header-logo">
         </a>
+        <div class="language-toggle">
+            <a href="/" class="lang-link active">EN</a>
+            <span class="lang-separator">|</span>
+            <a href="/fr/" class="lang-link">FR</a>
+        </div>
     </header>
     
     <main>
