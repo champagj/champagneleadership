@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Champagne;Jean-Francois;;;CAE\, AAiP
+FN:Jean-Francois (JF) Champagne
+NICKNAME:JF
+ORG:Champagne Leadership & Consulting
+TITLE:Founder & Principal Consultant | Fondateur et consultant principal
+TEL;TYPE=CELL,VOICE:+1-613-889-5379
+EMAIL;TYPE=INTERNET,WORK:jf@champagneleadership.ca
+URL;TYPE=WORK:https://champagneleadership.ca
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/jfchampagne
+NOTE:Governance · Leadership · Technology / Gouvernance · Leadership · Technologie
+END:VCARD
